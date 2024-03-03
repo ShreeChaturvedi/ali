@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+.banner {
+    background-color: #c41230;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+    background: url('../images/miami.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-name {
+    margin: 0;
+}
+
+.navbar {
+    margin-left: -200px;
+}
+
+.navbar a {
+    font: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.navbar a.active {
+    color: #FFD700;
+}
+
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    text-align: center;
+    width: 200px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label{
+    color: #666; 
+}
+
+/* Event styles copied over */
+
+.main-panel {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px auto;
+    width: fit-content;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.main-panel .left, .main-panel .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.opportunities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opportunity {
+    display: flex;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.opportunity .img {
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+
+.opportunity-info {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.opportunity-info .location, .opportunity-info .description, .opportunity-info .people {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.left-wrapper {
+    max-width: 700px;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-wrapper .date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-wrapper .date div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    text-wrap: nowrap;
+}
+
+.apply-btn {
+    background-color: #c41230;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+.apply-btn:hover {
+    background-color: black;
+}
+
+.opportunity-info h2, .opportunity-info p {
+    margin: 5px 0;
+}
+
+#card-four {
+    background-image: url('https://www.travelbutlercounty.com/sites/default/files/styles/600x400/public/simpleview_listings/Butterfield-Farm-Market-Pumpkins2-1f96c0935056a36_1f96c24d-5056-a36a-0976e0279742aafc.jpg?itok=1bb7GewH');
+}
+
+#card-five {
+    background-image: url('https://oxfordobserver.org/wp-content/uploads/2020/10/VETERANSDAY-photo-2-for-10_30-edited.jpg');
+}
+
+#card-six {
+    background-image: url('https://www.gimv.org/wp-content/uploads/2022/06/6-2.jpg');
+}
+
+#card-one {
+    background-image: url('../images/miami_campus.jpeg');
+}
+
+#card-two {
+    background-image: url('../images/makeup.jpeg');
+}
+
+#card-three {
+    background-image: url('../images/blood_donation.jpeg');
+}

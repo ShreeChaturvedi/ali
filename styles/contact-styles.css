@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+.banner {
+    background-color: #c41230;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+    background: url('../images/miami.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-name {
+    margin: 0;
+}
+
+.navbar {
+    margin-left: -200px;
+}
+
+.navbar a {
+    font: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.navbar a.active {
+    color: #FFD700;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical; 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: #c41230; 
+}
+
+.submit-btn {
+    background-color: #c41230; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.submit-btn:hover {
+    background-color: black; 
+}

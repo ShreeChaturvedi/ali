@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+.banner {
+    background-color: #c41230;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+    background: url('../images/miami.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-name {
+    margin: 0;
+}
+
+.navbar {
+    margin-left: -200px;
+}
+
+.navbar a {
+    font: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.navbar a.active {
+    color: #FFD700;
+}
+
+.header {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header .filter, .header .add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.header .filter:hover, .header .add:hover{
+    cursor: pointer;
+}
+
+.header .filter p, .header .add p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.opportunities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opportunity {
+    display: flex;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.opportunity .img {
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+
+.opportunity-info {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.opportunity-info .location, .opportunity-info .description, .opportunity-info .people {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.left-wrapper {
+    max-width: 700px;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.right-wrapper .date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right-wrapper .date div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    text-wrap: nowrap;
+}
+
+.apply-btn {
+    background-color: #c41230;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: black;
+}
+
+.opportunity-info h2, .opportunity-info p {
+    margin: 5px 0;
+}
+
+#card-one {
+    background-image: url('../images/miami_campus.jpeg');
+}
+
+#card-two {
+    background-image: url('../images/makeup.jpeg');
+}
+
+#card-three {
+    background-image: url('../images/blood_donation.jpeg');
+}
